@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TradingView Ad Shield</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <span class="shield" aria-hidden="true"></span>
+        <div>
+          <h1>TradingView Ad Shield</h1>
+          <p>拦截广告请求并清理图表页广告容器</p>
+        </div>
+      </header>
+
+      <section class="status-card">
+        <label class="toggle-row" for="enabled">
+          <span>
+            <strong>广告拦截</strong>
+            <small id="status">正在读取状态…</small>
+          </span>
+          <input id="enabled" type="checkbox" />
+          <span class="switch" aria-hidden="true"></span>
+        </label>
+      </section>
+
+      <p class="notice">
+        修改开关后刷新 TradingView 页面，网络拦截与页面隐藏会同时生效。
+      </p>
+      <button id="reload" type="button">刷新当前页面</button>
+      <footer>本插件不收集、不上传任何浏览数据。</footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
