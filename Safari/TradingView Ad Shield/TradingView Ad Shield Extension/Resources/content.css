@@ -1,0 +1,12 @@
+html[data-tv-ad-shield="on"] #charting-ad,
+html[data-tv-ad-shield="on"] [id^="div-gpt-ad-toast-ad-"],
+html[data-tv-ad-shield="on"] [id^="google_ads_iframe_"],
+html[data-tv-ad-shield="on"] [id="goog_plcm_frame"],
+html[data-tv-ad-shield="on"] iframe[src*="googlesyndication.com"],
+html[data-tv-ad-shield="on"] iframe[src*="doubleclick.net"],
+html[data-tv-ad-shield="on"] iframe[aria-label="广告"],
+html[data-tv-ad-shield="on"] [data-tv-ad-shield-hidden="true"] {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}

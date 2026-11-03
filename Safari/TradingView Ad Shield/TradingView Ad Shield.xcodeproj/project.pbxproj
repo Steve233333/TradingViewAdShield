@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DB790E23099CA0E008A69A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB790E13099CA0E008A69A8 /* AppDelegate.swift */; };
+		3DB790E63099CA0E008A69A8 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DB790E43099CA0E008A69A8 /* Main.html */; };
+		3DB790E83099CA0E008A69A8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB790E73099CA0E008A69A8 /* Icon.png */; };
+		3DB790EA3099CA0E008A69A8 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 3DB790E93099CA0E008A69A8 /* Style.css */; };
+		3DB790EC3099CA0E008A69A8 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 3DB790EB3099CA0E008A69A8 /* Script.js */; };
+		3DB790EE3099CA0E008A69A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB790ED3099CA0E008A69A8 /* ViewController.swift */; };
+		3DB790F13099CA0E008A69A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB790EF3099CA0E008A69A8 /* Main.storyboard */; };
+		3DB790F33099CA0F008A69A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB790F23099CA0F008A69A8 /* Assets.xcassets */; };
+		3DB790FA3099CA0F008A69A8 /* TradingView Ad Shield Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3DB790F93099CA0F008A69A8 /* TradingView Ad Shield Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DB790FF3099CA0F008A69A8 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB790FE3099CA0F008A69A8 /* SafariWebExtensionHandler.swift */; };
+		3DB791163099CA10008A69A8 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7910B3099CA10008A69A8 /* popup.js */; };
+		3DB791173099CA10008A69A8 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7910C3099CA10008A69A8 /* content.css */; };
+		3DB791183099CA10008A69A8 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7910D3099CA10008A69A8 /* background.js */; };
+		3DB791193099CA10008A69A8 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7910E3099CA10008A69A8 /* popup.html */; };
+		3DB7911A3099CA10008A69A8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DB7910F3099CA10008A69A8 /* README.md */; };
+		3DB7911B3099CA10008A69A8 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = 3DB791103099CA10008A69A8 /* icons */; };
+		3DB7911C3099CA10008A69A8 /* scripts in Resources */ = {isa = PBXBuildFile; fileRef = 3DB791113099CA10008A69A8 /* scripts */; };
+		3DB7911D3099CA10008A69A8 /* rules.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DB791123099CA10008A69A8 /* rules.json */; };
+		3DB7911E3099CA10008A69A8 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DB791133099CA10008A69A8 /* manifest.json */; };
+		3DB7911F3099CA10008A69A8 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 3DB791143099CA10008A69A8 /* popup.css */; };
+		3DB791203099CA10008A69A8 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 3DB791153099CA10008A69A8 /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB790FB3099CA0F008A69A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DB790D63099CA0E008A69A8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB790F83099CA0F008A69A8;
+			remoteInfo = "TradingView Ad Shield Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DB791063099CA10008A69A8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3DB790FA3099CA0F008A69A8 /* TradingView Ad Shield Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3DB790DE3099CA0E008A69A8 /* TradingView Ad Shield.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TradingView Ad Shield.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB790E13099CA0E008A69A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DB790E53099CA0E008A69A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		3DB790E73099CA0E008A69A8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		3DB790E93099CA0E008A69A8 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		3DB790EB3099CA0E008A69A8 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		3DB790ED3099CA0E008A69A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DB790F03099CA0E008A69A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DB790F23099CA0F008A69A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB790F43099CA0F008A69A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB790F93099CA0F008A69A8 /* TradingView Ad Shield Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TradingView Ad Shield Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB790FE3099CA0F008A69A8 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		3DB791003099CA10008A69A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DB7910B3099CA10008A69A8 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = Resources/popup.js; sourceTree = "<group>"; };
+		3DB7910C3099CA10008A69A8 /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.css; path = Resources/content.css; sourceTree = "<group>"; };
+		3DB7910D3099CA10008A69A8 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = Resources/background.js; sourceTree = "<group>"; };
+		3DB7910E3099CA10008A69A8 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = Resources/popup.html; sourceTree = "<group>"; };
+		3DB7910F3099CA10008A69A8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = Resources/README.md; sourceTree = "<group>"; };
+		3DB791103099CA10008A69A8 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = Resources/icons; sourceTree = "<group>"; };
+		3DB791113099CA10008A69A8 /* scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = scripts; path = Resources/scripts; sourceTree = "<group>"; };
+		3DB791123099CA10008A69A8 /* rules.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = rules.json; path = Resources/rules.json; sourceTree = "<group>"; };
+		3DB791133099CA10008A69A8 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = Resources/manifest.json; sourceTree = "<group>"; };
+		3DB791143099CA10008A69A8 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = Resources/popup.css; sourceTree = "<group>"; };
+		3DB791153099CA10008A69A8 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = Resources/content.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB790DB3099CA0E008A69A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB790F63099CA0F008A69A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB790D53099CA0E008A69A8 = {
+			isa = PBXGroup;
+			children = (
+				3DB790E03099CA0E008A69A8 /* TradingView Ad Shield */,
+				3DB790FD3099CA0F008A69A8 /* TradingView Ad Shield Extension */,
+				3DB790DF3099CA0E008A69A8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB790DF3099CA0E008A69A8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB790DE3099CA0E008A69A8 /* TradingView Ad Shield.app */,
+				3DB790F93099CA0F008A69A8 /* TradingView Ad Shield Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB790E03099CA0E008A69A8 /* TradingView Ad Shield */ = {
+			isa = PBXGroup;
+			children = (
+				3DB790E13099CA0E008A69A8 /* AppDelegate.swift */,
+				3DB790ED3099CA0E008A69A8 /* ViewController.swift */,
+				3DB790EF3099CA0E008A69A8 /* Main.storyboard */,
+				3DB790F23099CA0F008A69A8 /* Assets.xcassets */,
+				3DB790F43099CA0F008A69A8 /* Info.plist */,
+				3DB790E33099CA0E008A69A8 /* Resources */,
+			);
+			path = "TradingView Ad Shield";
+			sourceTree = "<group>";
+		};
+		3DB790E33099CA0E008A69A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DB790E43099CA0E008A69A8 /* Main.html */,
+				3DB790E73099CA0E008A69A8 /* Icon.png */,
+				3DB790E93099CA0E008A69A8 /* Style.css */,
+				3DB790EB3099CA0E008A69A8 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DB790FD3099CA0F008A69A8 /* TradingView Ad Shield Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3DB7910A3099CA10008A69A8 /* Resources */,
+				3DB790FE3099CA0F008A69A8 /* SafariWebExtensionHandler.swift */,
+				3DB791003099CA10008A69A8 /* Info.plist */,
+			);
+			path = "TradingView Ad Shield Extension";
+			sourceTree = "<group>";
+		};
+		3DB7910A3099CA10008A69A8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3DB7910B3099CA10008A69A8 /* popup.js */,
+				3DB7910C3099CA10008A69A8 /* content.css */,
+				3DB7910D3099CA10008A69A8 /* background.js */,
+				3DB7910E3099CA10008A69A8 /* popup.html */,
+				3DB7910F3099CA10008A69A8 /* README.md */,
+				3DB791103099CA10008A69A8 /* icons */,
+				3DB791113099CA10008A69A8 /* scripts */,
+				3DB791123099CA10008A69A8 /* rules.json */,
+				3DB791133099CA10008A69A8 /* manifest.json */,
+				3DB791143099CA10008A69A8 /* popup.css */,
+				3DB791153099CA10008A69A8 /* content.js */,
+			);
+			name = Resources;
+			path = "TradingView Ad Shield Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB790DD3099CA0E008A69A8 /* TradingView Ad Shield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB791073099CA10008A69A8 /* Build configuration list for PBXNativeTarget "TradingView Ad Shield" */;
+			buildPhases = (
+				3DB790DA3099CA0E008A69A8 /* Sources */,
+				3DB790DB3099CA0E008A69A8 /* Frameworks */,
+				3DB790DC3099CA0E008A69A8 /* Resources */,
+				3DB791063099CA10008A69A8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB790FC3099CA0F008A69A8 /* PBXTargetDependency */,
+			);
+			name = "TradingView Ad Shield";
+			packageProductDependencies = (
+			);
+			productName = "TradingView Ad Shield";
+			productReference = 3DB790DE3099CA0E008A69A8 /* TradingView Ad Shield.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DB790F83099CA0F008A69A8 /* TradingView Ad Shield Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB791033099CA10008A69A8 /* Build configuration list for PBXNativeTarget "TradingView Ad Shield Extension" */;
+			buildPhases = (
+				3DB790F53099CA0F008A69A8 /* Sources */,
+				3DB790F63099CA0F008A69A8 /* Frameworks */,
+				3DB790F73099CA0F008A69A8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TradingView Ad Shield Extension";
+			packageProductDependencies = (
+			);
+			productName = "TradingView Ad Shield Extension";
+			productReference = 3DB790F93099CA0F008A69A8 /* TradingView Ad Shield Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB790D63099CA0E008A69A8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					3DB790DD3099CA0E008A69A8 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+					3DB790F83099CA0F008A69A8 = {
+						CreatedOnToolsVersion = 26.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 3DB790D93099CA0E008A69A8 /* Build configuration list for PBXProject "TradingView Ad Shield" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB790D53099CA0E008A69A8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3DB790DF3099CA0E008A69A8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB790DD3099CA0E008A69A8 /* TradingView Ad Shield */,
+				3DB790F83099CA0F008A69A8 /* TradingView Ad Shield Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB790DC3099CA0E008A69A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB790E83099CA0E008A69A8 /* Icon.png in Resources */,
+				3DB790F13099CA0E008A69A8 /* Main.storyboard in Resources */,
+				3DB790EC3099CA0E008A69A8 /* Script.js in Resources */,
+				3DB790E63099CA0E008A69A8 /* Main.html in Resources */,
+				3DB790F33099CA0F008A69A8 /* Assets.xcassets in Resources */,
+				3DB790EA3099CA0E008A69A8 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB790F73099CA0F008A69A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB7911F3099CA10008A69A8 /* popup.css in Resources */,
+				3DB791203099CA10008A69A8 /* content.js in Resources */,
+				3DB791163099CA10008A69A8 /* popup.js in Resources */,
+				3DB7911C3099CA10008A69A8 /* scripts in Resources */,
+				3DB791193099CA10008A69A8 /* popup.html in Resources */,
+				3DB7911A3099CA10008A69A8 /* README.md in Resources */,
+				3DB7911E3099CA10008A69A8 /* manifest.json in Resources */,
+				3DB7911B3099CA10008A69A8 /* icons in Resources */,
+				3DB7911D3099CA10008A69A8 /* rules.json in Resources */,
+				3DB791183099CA10008A69A8 /* background.js in Resources */,
+				3DB791173099CA10008A69A8 /* content.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB790DA3099CA0E008A69A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB790EE3099CA0E008A69A8 /* ViewController.swift in Sources */,
+				3DB790E23099CA0E008A69A8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DB790F53099CA0F008A69A8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB790FF3099CA0F008A69A8 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB790FC3099CA0F008A69A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB790F83099CA0F008A69A8 /* TradingView Ad Shield Extension */;
+			targetProxy = 3DB790FB3099CA0F008A69A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DB790E43099CA0E008A69A8 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB790E53099CA0E008A69A8 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		3DB790EF3099CA0E008A69A8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB790F03099CA0E008A69A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB791013099CA10008A69A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DB791023099CA10008A69A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		3DB791043099CA10008A69A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TradingView Ad Shield Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TradingView Ad Shield Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steve233.TradingViewAdShield.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DB791053099CA10008A69A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TradingView Ad Shield Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TradingView Ad Shield Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steve233.TradingViewAdShield.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		3DB791083099CA10008A69A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TradingView Ad Shield/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TradingView Ad Shield";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steve233.TradingViewAdShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3DB791093099CA10008A69A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "TradingView Ad Shield/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "TradingView Ad Shield";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.steve233.TradingViewAdShield;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB790D93099CA0E008A69A8 /* Build configuration list for PBXProject "TradingView Ad Shield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB791013099CA10008A69A8 /* Debug */,
+				3DB791023099CA10008A69A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB791033099CA10008A69A8 /* Build configuration list for PBXNativeTarget "TradingView Ad Shield Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB791043099CA10008A69A8 /* Debug */,
+				3DB791053099CA10008A69A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB791073099CA10008A69A8 /* Build configuration list for PBXNativeTarget "TradingView Ad Shield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB791083099CA10008A69A8 /* Debug */,
+				3DB791093099CA10008A69A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB790D63099CA0E008A69A8 /* Project object */;
+}

@@ -1,0 +1,60 @@
+{
+  "manifest_version": 3,
+  "name": "TradingView Ad Shield",
+  "version": "1.0.0",
+  "description": "阻止 TradingView 图表页加载第三方广告，并隐藏残留广告容器。",
+  "permissions": [
+    "activeTab",
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "*://*.tradingview.com/*",
+    "*://*.googlesyndication.com/*",
+    "*://*.doubleclick.net/*",
+    "*://*.googleadservices.com/*",
+    "*://adservice.google.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "TradingView Ad Shield",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png",
+      "128": "icons/icon-128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.tradingview.com/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "tradingview-ads",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { spawnSync } from "node:child_process";
+import { existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -58,6 +59,12 @@ for (const selector of ["#charting-ad", '[id^="div-gpt-ad-toast-ad-"]']) {
   }
 }
 
+for (const icon of manifest.icons ? Object.values(manifest.icons) : []) {
+  if (!existsSync(resolve(projectRoot, icon))) {
+    throw new Error(`Missing manifest icon: ${icon}`);
+  }
+}
+
 for (const file of [
   "background.js",
   "content.js",
@@ -70,6 +77,17 @@ for (const file of [
 
   if (result.status !== 0) {
     throw new Error(`JavaScript syntax check failed: ${file}`);
+  }
+}
+
+const safariManifest = resolve(
+  projectRoot,
+  "Safari/TradingView Ad Shield/TradingView Ad Shield Extension/Resources/manifest.json",
+);
+if (existsSync(safariManifest)) {
+  const copiedManifest = JSON.parse(await readFile(safariManifest, "utf8"));
+  if (copiedManifest.version !== manifest.version) {
+    throw new Error("Safari extension resources are stale; regenerate the project.");
   }
 }
 
